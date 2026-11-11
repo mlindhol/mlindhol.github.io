@@ -12,6 +12,11 @@ body {
 }
 
 header {
+    padding: 0%;
+    flex-direction: column;
+}
+
+.top-info {
     /* background-color: #1b998b; */
     /* background-image: url(mount-ogden-13-1551-3066-lavender-light-orange-smooth-contours.png); */
     background-image: url(ogden-ben-lomond-contours.svg);
@@ -20,7 +25,32 @@ header {
     justify-content: left;
     align-items: center;
     margin: 0%;
-    padding: 0px 0px 50px 0px;
+    padding: 0px 0px 0px 20px;
+}
+
+nav {
+    background-color: #443252;
+    justify-content: center;
+    display: flex;
+    padding: 0px;
+    align-items: flex-start;
+}
+
+nav ul {
+    display: flex;
+    color: lavender;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+}
+
+nav a {
+    color: lavender;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 main {
@@ -29,16 +59,15 @@ main {
     justify-content: left;
     align-items: left;
     margin: 0%;
-    padding: 10%;
+    padding: 5%;
 }
 
 footer {
     background-color: #C9b8d7;
-    padding: 5%;
-    height: 50px;
-    justify-content: left;
     padding: 2px;
-    align-items: left;
+    height: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .centered {
@@ -59,11 +88,12 @@ footer {
 }
 
 section {
-    background-color: #C9b8d7;
+    background-color: hsl(0, 0%, 100%);
     padding: 25px;
     border-radius: 10px;
     border-width: 5px;
-    border-color: #e6822a;
+    border-color: black;
+    border-style: solid;
     margin: 30px;
-    color: #443252;
+    color: black;
 }

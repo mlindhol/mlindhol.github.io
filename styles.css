@@ -1,0 +1,146 @@
+body {
+    margin: 0%;
+    /* background-image: url(ben-lomond-farmington-real-contours_90.svg);
+    background-size: auto; */
+    /* background-image: url(mount-ogden-lavender-light-orange-tall.png); */
+    /* background-image: url(ogden-ben-lomond-inverted-tall.svg); */
+    background-color: hsl(#e2eff1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    padding: 0%;
+    flex-direction: column;
+}
+
+.top-info {
+    /* background-color: #1b998b; */
+    /* background-image: url(mount-ogden-13-1551-3066-lavender-light-orange-smooth-contours.png); */
+    /* background-image: url(teal-topo-mt-ogden.png); */
+    background-image: url(ben-lomond-farmington-real-contours-60-percent-transparent.svg);
+    background-size: auto;
+    color: teal;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0%;
+    padding: 0px 0px 0px 20px;
+}
+
+nav {
+    background-color: #443252;
+    justify-content: center;
+    display: flex;
+    padding: 0px;
+    align-items: flex-start;
+}
+
+nav ul {
+    display: flex;
+    color: lavender;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+}
+
+nav a {
+    color: lavender;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    /* background-image: url(ogden-ben-lomond-contours.svg); */
+    /* background-image: url(mount-ogden-13-1551-3066-lavender-light-orange-smooth-contours.png); */
+    justify-content: left;
+    align-items: left;
+    margin: 0%;
+    padding: 5%;
+}
+
+footer {
+    background-color: teal;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.linkedin-hyperlink {
+    color: white;
+    text-decoration: none;
+
+}
+
+.linkedin-hyperlink:hover {
+    text-decoration: underline;
+}
+
+.centered {
+    text-align: center;
+}
+
+.intro {
+    max-width: 500px;
+    text-align: left;
+}
+
+.my-photo {
+    border-radius: 50%;
+    margin: 20px;
+    border-color: teal;
+    border-width: 5px;
+    border-style: solid;
+}
+
+section {
+    background-color: hsl(#e2eff1);
+    padding: 25px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: teal;
+    border-style: solid;
+    margin: 30px;
+    color: teal;
+}
+
+.other-page {
+    margin: 30px 30px 10px 30px;
+    color: teal;
+    border-with: 0px;
+}
+
+.map-collection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.map-card {
+    width: 540px;
+    height: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: teal;
+    margin: 20px;
+    padding: 0px;
+}
+
+.map-text {
+    padding: 0px 20px 5px 20px;
+    height: 180px;
+    color: white;
+}
+
+.map-photo {
+    display: block;
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+    margin: 0px;
+}

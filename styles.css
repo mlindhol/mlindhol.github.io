@@ -112,7 +112,7 @@ section {
 .other-page {
     margin: 30px 30px 10px 30px;
     color: teal;
-    border-with: 0px;
+    border-width: 0px;
 }
 
 .map-collection {

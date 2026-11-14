@@ -25,7 +25,8 @@ header {
     justify-content: left;
     align-items: center;
     margin: 0%;
-    padding: 0px 0px 0px 20px;
+    padding: 10px 24px;
+    gap: 18px;
 }
 
 nav {
@@ -39,16 +40,20 @@ nav {
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     color: white;
     justify-content: space-evenly;
     width: 100%;
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 14px;
 }
 
 nav a:hover {
@@ -105,16 +110,65 @@ footer {
 }
 
 .intro {
-    max-width: 500px;
+    max-width: 620px;
+    min-width: 0;
     text-align: left;
 }
 
+.intro h1 {
+    margin: 0 0 6px;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.intro p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
 .my-photo {
+    box-sizing: border-box;
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    flex-shrink: 0;
     border-radius: 50%;
-    margin: 20px;
+    margin: 0;
     border-color: rgb(32, 32, 83);
-    border-width: 7px;
+    border-width: 4px;
     border-style: solid;
+}
+
+@media (max-width: 600px) {
+    .top-info {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .my-photo {
+        width: 72px;
+        height: 72px;
+        border-width: 3px;
+    }
+
+    .intro h1 {
+        font-size: 20px;
+    }
+
+    .intro p {
+        font-size: 13px;
+    }
+
+    nav {
+        height: auto;
+        min-height: 30px;
+    }
+
+    nav ul {
+        gap: 6px 12px;
+        padding: 6px 12px;
+    }
 }
 
 section {
@@ -150,36 +204,67 @@ section {
         -10px 10px 16px rgba(0, 0, 0, 0.45);
 }
 
+
+
 .map-collection {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 80px;
     max-width: 1100px;
     margin: 0 auto;
+}
 
-    .map-card {
-        height: 460px;
-        border-radius: 15px;
-        /* box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.3); */
-        box-shadow: -10px 10px 16px rgba(0, 0, 0, 0.45);
-        overflow: hidden;
-        background-color: teal;
-        width: auto;
-        min-width: 0;
-        margin: 0;
-        padding: 0px;
-    }
+.portfolio-collection {
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto 80px;
+}
 
-    .map-text {
-        padding: 0px 20px 5px 20px;
-        height: 160px;
-        color: white;
-    }
+.map-card {
+    height: 460px;
+    border-radius: 15px;
+    /* box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.3); */
+    box-shadow: -10px 10px 16px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    background-color: teal;
+    width: auto;
+    min-width: 0;
+    margin: 0;
+    padding: 0px;
+}
 
-    .map-photo {
-        display: block;
-        object-fit: cover;
-        height: 300px;
-        width: 100%;
-        margin: 0px;
-    }
+.map-text {
+    padding: 0px 20px 5px 20px;
+    height: 160px;
+    color: white;
+}
+
+.map-photo {
+    display: block;
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    margin: 0px;
+}
+
+.portfolio-photo {
+    display: block;
+    object-fit: contain;
+    height: 600px;
+    width: calc(100% - 20px);
+    margin: 0px 10px 0px 10px;
+}
+
+.portfolio-card {
+    height: 800px;
+    border-radius: 15px;
+    /* box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.3); */
+    box-shadow: -10px 10px 16px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    background-color: teal;
+    width: auto;
+    min-width: 0;
+    margin: 0;
+    padding: 0px;
+}

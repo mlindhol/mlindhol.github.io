@@ -11,15 +11,16 @@ body {
 header {
     padding: 0%;
     flex-direction: column;
+    background-color: teal;
 }
 
 .top-info {
     /* background-color: #1b998b; */
     /* background-image: url(mount-ogden-13-1551-3066-lavender-light-orange-smooth-contours.png); */
     /* background-image: url(teal-topo-mt-ogden.png); */
-    background-image: url(ben-lomond-farmington-real-contours-60-percent-transparent.svg);
-    background-size: auto;
-    color: teal;
+    /* background-image: url(ben-lomond-farmington-real-contours-60-percent-transparent.svg);
+    background-size: auto; */
+    color: white;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -28,23 +29,25 @@ header {
 }
 
 nav {
-    background-color: #443252;
+    background-color: rgb(32, 32, 83);
     justify-content: center;
+    align-items: center;
     display: flex;
     padding: 0px;
-    align-items: flex-start;
+    height: 30px;
 }
 
 nav ul {
     display: flex;
-    color: lavender;
+    color: white;
     justify-content: space-evenly;
     width: 100%;
     list-style: none;
+    margin: 0;
 }
 
 nav a {
-    color: lavender;
+    color: white;
     text-decoration: none;
 }
 
@@ -53,16 +56,32 @@ nav a:hover {
 }
 
 main {
-    /* background-image: url(ogden-ben-lomond-contours.svg); */
-    /* background-image: url(mount-ogden-13-1551-3066-lavender-light-orange-smooth-contours.png); */
+    /* background-image: url(ben-lomond-farmington-real-contours-60-percent-transparent.svg);
+    background-size: auto; */
+    position: relative;
+    isolation: isolate;
     justify-content: left;
     align-items: left;
     margin: 0%;
-    padding: 5%;
+    padding: 30px 5% 5%;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: url(ben-lomond-farmington-real-contours_90.svg);
+    background-size: cover;
+    /* opacity: 0.4; */
+}
+
+main>section:first-child {
+    margin-top: 30px;
 }
 
 footer {
-    background-color: teal;
+    background-color: rgb(32, 32, 83);
     color: white;
     text-decoration: none;
     padding: 10px;
@@ -93,27 +112,29 @@ footer {
 .my-photo {
     border-radius: 50%;
     margin: 20px;
-    border-color: teal;
+    border-color: rgb(32, 32, 83);
     border-width: 7px;
     border-style: solid;
 }
 
 section {
-    background-color: hsl(#e2eff1);
+    background-color: white;
     padding: 25px;
     border-radius: 10px;
     border-width: 5px;
-    border-color: teal;
+    border-color: rgb(32, 32, 83);
     border-style: solid;
-    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
-    margin: 20px 30px 20px 30px;
+    box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.3);
+    margin: 30px 30px 30px 30px;
     color: teal;
 }
 
 .other-page {
-    margin: 30px 30px 10px 30px;
-    color: teal;
+    margin: 0px 30px 10px 30px;
+    color: rgb(32, 32, 83);
     border-width: 0px;
+    box-shadow: none;
+    background-color: transparent;
 }
 
 .map-collection {
@@ -126,6 +147,7 @@ section {
     width: 540px;
     height: 600px;
     border-radius: 15px;
+    box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     background-color: teal;
     margin: 20px;

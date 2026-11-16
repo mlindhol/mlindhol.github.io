@@ -15,6 +15,9 @@ header {
     padding: 0%;
     flex-direction: column;
     background-color: teal;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.6);
 }
 

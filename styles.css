@@ -196,6 +196,8 @@ section {
 .portfolio-collection {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: 50px;
     max-width: 1100px;
     margin: 0 auto 80px;
 }
@@ -229,14 +231,16 @@ section {
 
 .portfolio-photo {
     display: block;
-    object-fit: contain;
-    height: 600px;
-    width: calc(100% - 20px);
-    margin: 0px 10px 0px 10px;
+    /* object-fit: contain; */
+    object-fit: cover;
+    height: 630px;
+    width: 100%;
+    /* width: calc(100% - 20px); */
+    margin: 0px 0px 0px 0px;
 }
 
 .portfolio-card {
-    height: 800px;
+    height: 850px;
     border-radius: 15px;
     /* box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.3); */
     box-shadow: -10px 10px 16px rgba(0, 0, 0, 0.45);
